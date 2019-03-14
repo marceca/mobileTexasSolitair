@@ -1,9 +1,15 @@
 import React from 'react';
 import * as types from '../actions/actions';
+import {View, Image, StyleSheet, Dimensions, TouchableHighlight} from 'react-native';
 import STARTING_DECK from '../../assets/deck';
 import * as getHands from '../helpers/functionsHelpers';
+import constants from '../../assets/Constants';
+
+const screenWidth = Dimensions.get('window').width;
+const screenHeight = Dimensions.get('window').height;
 
 const initState = {
+  play: 1,
   dealt: false,
   deck: STARTING_DECK,
   handsDisplay: [[],[],[],[],[],[],[]],
@@ -15,11 +21,13 @@ const initState = {
   chosenHand: true,
   choseHandThisTurn: true,
   chooseOncePerTurn: false,
-  cardBack: '/settings_page/Red_Card_Back_Button.svg',
+  cardBack: constants.cardBackOptions['red'],
   name: null,
   profilePicture: ''
 }
-
+function test() {
+  console.log('teting in app red')
+}
 // Sort user hand by card value
 function userSort(userSorting) {
   for(let i = 0; i < userSorting.length; i++) {
@@ -52,7 +60,7 @@ const applicationReducer = (state = initState, action)=> {
     // SOME SETTINGS
     case types.CHANGECARDBACK:
       const changeCardBackState =  Object.assign({}, state);
-      changeCardBackState.cardBack = action.cardBack;
+      changeCardBackState.cardBack = constants.cardBackOptions[action.cardBack];
     return changeCardBackState
 
     case types.UPDATENUMBEROFHANDS:
@@ -73,6 +81,7 @@ const applicationReducer = (state = initState, action)=> {
       const dealState = Object.assign({}, state);
       let card, ranNum;
       let cardsEach = 0
+      console.log('deal state')
       if(dealState.dealt === false) {
         while(cardsEach < 2) {
           for(let i = 0; i < dealState.handsDisplay.length; i++) {
@@ -81,15 +90,16 @@ const applicationReducer = (state = initState, action)=> {
             // Random card from ranNum
             card = dealState.deck.splice(ranNum, 1)
             dealState.handObjects[i].push(card)
-            dealState.handsDisplay[i].push(<img key={card[0].name} className="card-image" src={dealState.cardBack} />)
+            dealState.handsDisplay[i].push(<Image style={styles.cardImage}  key={card[0].name}  source={dealState.cardBack} />)
           }
           cardsEach++
           dealState.userHand = dealState.handObjects[dealState.handObjects.length - 1];
         }
         dealState.handsDisplay[dealState.handsDisplay.length - 1] = []
-        dealState.handsDisplay[dealState.handsDisplay.length - 1].push(<img key={dealState.userHand[0][0].name} className="card-image" src={dealState.userHand[0][0].img} />);
-        dealState.handsDisplay[dealState.handsDisplay.length - 1].push(<img key={dealState.userHand[1][0].name} className="card-image" src={dealState.userHand[1][0].img} />);
+        dealState.handsDisplay[dealState.handsDisplay.length - 1].push(<Image key={dealState.userHand[0][0].name} style={styles.cardImage}  source={dealState.userHand[0][0].img} />);
+        dealState.handsDisplay[dealState.handsDisplay.length - 1].push(<Image key={dealState.userHand[1][0].name} style={styles.cardImage}  source={dealState.userHand[1][0].img} />);
         dealState.dealt = true;
+        dealState.play++;
       }
     return dealState;
 
@@ -99,8 +109,8 @@ const applicationReducer = (state = initState, action)=> {
         userHandState.userHand = userHandState.handObjects[action.hand];
         userHandState.priorHands[action.hand] = true;
         userHandState.handsDisplay[action.hand] = [];
-        userHandState.handsDisplay[action.hand].push(<img key={userHandState.userHand[0][0].name} className="card-image" src={userHandState.userHand[0][0].img} />);
-        userHandState.handsDisplay[action.hand].push(<img key={userHandState.userHand[1][0].name} className="card-image" src={userHandState.userHand[1][0].img} />);
+        userHandState.handsDisplay[action.hand].push(<Image key={userHandState.userHand[0][0].name} style={styles.cardImage}  source={userHandState.userHand[0][0].img} />);
+        userHandState.handsDisplay[action.hand].push(<Image key={userHandState.userHand[1][0].name} style={styles.cardImage} source={userHandState.userHand[1][0].img} />);
         userHandState.chosenHand = action.hand + 1;
         [userHandState.handsDisplay[userHandState.handsDisplay.length - 1][0], userHandState.handsDisplay[action.hand][0]] = [userHandState.handsDisplay[action.hand][0], userHandState.handsDisplay[userHandState.handsDisplay.length - 1][0]];
         [userHandState.handsDisplay[userHandState.handsDisplay.length - 1][1], userHandState.handsDisplay[action.hand][1]] = [userHandState.handsDisplay[action.hand][1], userHandState.handsDisplay[userHandState.handsDisplay.length - 1][1]];
@@ -121,17 +131,20 @@ const applicationReducer = (state = initState, action)=> {
     case types.FLOP:
       const flopState = Object.assign({}, state);
       let flop = 0;
-      if(flopState.chosenHand != false) {
+      if(flopState.chosenHand != false && flopState.choseHandThisTurn === true) {
+        console.log('in if statemetn')
         while(flop < 3) {
           // Random number for each card
           ranNum = Math.floor(Math.random() * (flopState.deck.length))
           // Random card from ranNum
           card = flopState.deck.splice(ranNum, 1)
           flopState.communityCardsValue.push(card)
-          flopState.communityCards.push(<div key={card[0].name} className="community-card"><img key={card[0].name} className="card-image" src={card[0].img} /></div>)
+          flopState.communityCards.push(<View key={card[0].name} style={styles.cardImageContainer}><Image style={styles.cardImageBoard} source={card[0].img} /></View>)
           flop++
         }
+        flopState.play++;
       }
+      console.log('after loop state ', flopState)
       flopState.choseHandThisTurn = true;
       flopState.chooseOncePerTurn = false;
     return flopState;
@@ -143,7 +156,8 @@ const applicationReducer = (state = initState, action)=> {
       // Random card from ranNum
       card = turnState.deck.splice(ranNum, 1)
       turnState.communityCardsValue.push(card)
-      turnState.communityCards.push(<div key={card[0].name} className="community-card"><img key={card[0].name} className="card-image" src={card[0].img} /></div>)
+      turnState.communityCards.push(<View key={card[0].name} style={styles.cardImageContainer}><Image style={styles.cardImageBoard} key={card[0].name} source={card[0].img} /></View>)
+      turnState.play++;
       turnState.choseHandThisTurn = true;
       turnState.chooseOncePerTurn = false;
     return turnState;
@@ -155,7 +169,8 @@ const applicationReducer = (state = initState, action)=> {
       // Random card from ranNum
       card = riverState.deck.splice(ranNum, 1)
       riverState.communityCardsValue.push(card)
-      riverState.communityCards.push(<div key={card[0].name} className="community-card"><img key={card[0].name} className="card-image" src={card[0].img} /></div>)
+      riverState.communityCards.push(<View key={card[0].name} style={styles.cardImageContainer}><Image style={styles.cardImageBoard} key={card[0].name} source={card[0].img} /></View>)
+      riverState.play++;
       riverState.choseHandThisTurn = true;
       riverState.chooseOncePerTurn = false;
     return riverState;
@@ -165,8 +180,8 @@ const applicationReducer = (state = initState, action)=> {
       // Flip all cards
       for(let i = 0; i <  resultsState.handsDisplay.length - 1; i++) {
         resultsState.handsDisplay[i] = [];
-        resultsState.handsDisplay[i].push(<img key={resultsState.handObjects[i][0][0].name} className="card-image" src={resultsState.handObjects[i][0][0].img} />);
-        resultsState.handsDisplay[i].push(<img key={resultsState.handObjects[i][1][0].name} className="card-image" src={resultsState.handObjects[i][1][0].img} />);
+        resultsState.handsDisplay[i].push(<Image key={resultsState.handObjects[i][0][0].name} style={styles.cardImageBoard} source={resultsState.handObjects[i][0][0].img} />);
+        resultsState.handsDisplay[i].push(<Image key={resultsState.handObjects[i][1][0].name} style={styles.cardImageBoard} source={resultsState.handObjects[i][1][0].img} />);
       }
 
       // Get user total cards including community
@@ -393,8 +408,31 @@ const applicationReducer = (state = initState, action)=> {
     return resultsState
 
   default:
+  console.log('default')
     return state
   }
 }
+
+const styles = StyleSheet.create({
+  cardImage: {
+    width: undefined,
+    height: undefined,
+    flex: 1,
+    resizeMode: 'cover',
+  },
+  cardImageContainer: {
+    width: 60,
+    height: 90,
+    justifyContent: 'center',
+    flexDirection: 'column',
+    marginTop: screenHeight / 6
+  },
+  cardImageBoard: {
+    width: undefined,
+    height: undefined,
+    flex: 1,
+    resizeMode: 'contain',
+  }
+})
 
 export default applicationReducer;

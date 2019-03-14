@@ -58,8 +58,6 @@ const styles = StyleSheet.create({
     width: screenWidth,
     height: screenHeight,
     backgroundColor: 'black',
-    zIndex: 100,
-    position: 'absolute',
     flexDirection: 'column'
   },
   topMenu: {
@@ -83,7 +81,8 @@ const styles = StyleSheet.create({
   midMainMenu: {
     height: screenHeight / 1.3,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    zIndex: 20
   },
   bottomMainMenu: {
     height: screenHeight / 8,

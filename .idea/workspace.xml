@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="58c87f91-4349-41d6-8085-878086041eb2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/packager-info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/10_of_Clubs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/10_of_Diamonds.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/10_of_Hearts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/10_of_Spades.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/2_of_Clubs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/2_of_Diamonds.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/2_of_Hearts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/2_of_Spades.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/3_of_Clubs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/3_of_Diamonds.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/3_of_Hearts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/3_of_Spades.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/4_of_Clubs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/4_of_Diamonds.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/4_of_Hearts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/4_of_Spades.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/5_of_Clubs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/5_of_Diamonds.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/5_of_Hearts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/5_of_Spades.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/6_of_Clubs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/6_of_Diamonds.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/6_of_Hearts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/6_of_Spades.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/7_of_Clubs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/7_of_Diamonds.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/7_of_Hearts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/7_of_Spades.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/8_of_Clubs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/8_of_Diamonds.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/8_of_Hearts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/8_of_Spades.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/9_of_Clubs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/9_of_Diamonds.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/9_of_Hearts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/9_of_Spades.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/Ace_of_Clubs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/Ace_of_Diamonds.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/Ace_of_Hearts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/Ace_of_Spades.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/Jack_of_Clubs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/Jack_of_Diamonds.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/Jack_of_Hearts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/Jack_of_Spades.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/King_of_Clubs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/King_of_Diamonds.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/King_of_Hearts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/King_of_Spades.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/Queen_of_Clubs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/Queen_of_Diamonds.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/Queen_of_Hearts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/cards/Queen_of_Spades.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/deck.js" beforeDir="false" afterPath="$PROJECT_DIR$/Src/assets/deck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/icons/Stick_Button_Black.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/icons/Switch_Button_Black.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/main_menu/Play_Button.png" beforeDir="false" afterPath="$PROJECT_DIR$/Src/assets/main_menu/Play_Button.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/10C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/10D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/10H.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/10S.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/2C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/2D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/2H.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/2S.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/3C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/3D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/3H.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/3S.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/4C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/4D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/4H.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/4S.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/5C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/5D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/5H.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/5S.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/6C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/6D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/6H.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/6S.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/7C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/7D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/7H.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/7S.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/8C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/8D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/8H.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/8S.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/9C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/9D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/9H.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/9S.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/AC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/AD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/AH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/AS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/JC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/JD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/JH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/JS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/KC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/KD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/KH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/KS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/QC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/QD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/QH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/QS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/blue_back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/old_cards/nicubunu_Ornamental_deck_Queen_of_spades.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/Red_Card_Back_Button.png" beforeDir="false" afterPath="$PROJECT_DIR$/Src/assets/settings_page/Red_Card_Back_Button.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/SFX_Button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/Settings_Header_3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/Settings_Page.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/Show_Cards_Button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/Total_Number_of_Hands_Button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/Total_Number_of_Hands_Page.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/Total_Number_of_Hands_Pill.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/Tutorial_Button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/Website_Button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Backgrounds_Page_withX.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Card_Backs_Page_withX.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Change_Background_button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Change_Card_Backs_button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Contact_us_Button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Hand_Ranks_Button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Hand_Ranks_Page_withX.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Menu_screen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Questions_Comments_Page_withX.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/SFX_Toggle_Off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/SFX_Toggle_On.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Settings_BGimage_with_X.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Settings_Header.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Settings_Header_Half_Size.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Show_Cards_Toggle_Off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Show_Cards_Toggle_On.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Total_Number_Of_Hands_button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Total_Number_of_hands_Page_withX.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Tutorial_Button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/settings_page/updated_settings/Website_Button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/tables/Poker_Table.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/tutorial/Tutorial_Page_1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/tutorial/Tutorial_Page_2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/tutorial/Tutorial_Page_3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/tutorial/Tutorial_Page_4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/assets/tutorial/Tutorial_Page_5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/components/Constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/components/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/Src/components/Game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/components/Main_Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/Src/components/Main_Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/components/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/Src/components/Settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/components/Stick_Switch_Hands.js" beforeDir="false" afterPath="$PROJECT_DIR$/Src/components/Stick_Switch_Hands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/components/settings/Background_Image_Selection.js" beforeDir="false" afterPath="$PROJECT_DIR$/Src/components/settings/Background_Image_Selection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/components/settings/Change_Card_back.js" beforeDir="false" afterPath="$PROJECT_DIR$/Src/components/settings/Change_Card_back.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/components/settings/Hand_Ranks.js" beforeDir="false" afterPath="$PROJECT_DIR$/Src/components/settings/Hand_Ranks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/components/settings/Tutorial.js" beforeDir="false" afterPath="$PROJECT_DIR$/Src/components/settings/Tutorial.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/state/reducers/applicationReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Src/state/reducers/applicationReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/state/reducers/settingsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/Src/state/reducers/settingsReducer.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2068794054">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JavaScript" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="140" />
+    <option name="y" value="43" />
+    <option name="width" value="1400" />
+    <option name="height" value="987" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="StickOrSwitch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StickOrSwitch" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58c87f91-4349-41d6-8085-878086041eb2" name="Default Changelist" comment="" />
+      <created>1552508659780</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552508659780</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="140" y="43" width="1400" height="987" extended-state="0" />
+    <layout>
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32922408" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="TODO" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Assistant" order="2" weight="0.33505154" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

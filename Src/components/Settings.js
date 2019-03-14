@@ -51,12 +51,12 @@ class Settings extends Component {
           <View style={styles.settingsIcons} className="settings-icons"><Text style={styles.settingsText}>Show Cards</Text><Image source={require("../assets/settings_page/ON_Button.png")} /></View>
           <TouchableHighlight onPress={() => this.open_total_number_of_hands()}><View style={styles.settingsIcons} className="settings-icons"><Text style={styles.settingsText}>Total Number of Hands</Text><Image source={require("../assets/settings_page/Blue_Arrow_Button.png")} /></View></TouchableHighlight>
           <TouchableHighlight onPress={() => this.change_background_image()}><View style={styles.settingsIcons} className="settings-icons"><Text style={styles.settingsText}>Change Background</Text><Image source={require("../assets/settings_page/Blue_Arrow_Button.png")} /></View></TouchableHighlight>
-          <View style={styles.settingsIcons} onPress={() => this.open_card_back()} className="settings-icons"><Text style={styles.settingsText}>Change Card Backs</Text><Image source={require("../assets/settings_page/Blue_Arrow_Button.png")} /></View>
-          <View style={styles.settingsIcons} onPress={() => this.open_hand_ranks()} className="settings-icons"><Text style={styles.settingsText}>Hand Ranks</Text><Image source={require("../assets/settings_page/Blue_Arrow_Button.png")} /></View>
-          <View style={styles.settingsIcons} className="settings-icons"><Text style={styles.settingsText}>Contact Us / Feedback</Text><Image source={require("../assets/settings_page/Blue_Arrow_Button.png")} /></View>
-          <View style={styles.settingsIcons} onPress={() => this.open_tutorial()} className="settings-icons"><Text style={styles.settingsText}>Tutorial</Text><Image source={require("../assets/settings_page/Blue_Arrow_Button.png")} /></View>
-          <View style={styles.settingsIcons} className="settings-icons"><Text style={styles.settingsText}>Website</Text><Image source={require("../assets/settings_page/Blue_Arrow_Button.png")} /></View>
-          <View style={styles.settingsIcons} onPress={() => this.show_main_menu()} className="settings-icons"><Text style={styles.settingsText}>Menu Screen</Text><Image source={require("../assets/settings_page/Blue_Arrow_Button.png")} /></View>
+          <TouchableHighlight onPress={() => this.open_card_back()}><View style={styles.settingsIcons} className="settings-icons"><Text style={styles.settingsText}>Change Card Backs</Text><Image source={require("../assets/settings_page/Blue_Arrow_Button.png")} /></View></TouchableHighlight>
+          <TouchableHighlight onPress={() => this.open_hand_ranks()}><View style={styles.settingsIcons} className="settings-icons"><Text style={styles.settingsText}>Hand Ranks</Text><Image source={require("../assets/settings_page/Blue_Arrow_Button.png")} /></View></TouchableHighlight>
+          <TouchableHighlight><View style={styles.settingsIcons} className="settings-icons"><Text style={styles.settingsText}>Contact Us / Feedback</Text><Image source={require("../assets/settings_page/Blue_Arrow_Button.png")} /></View></TouchableHighlight>
+          <TouchableHighlight onPress={() => this.open_tutorial()}><View style={styles.settingsIcons} className="settings-icons"><Text style={styles.settingsText}>Tutorial</Text><Image source={require("../assets/settings_page/Blue_Arrow_Button.png")} /></View></TouchableHighlight>
+          <TouchableHighlight><View style={styles.settingsIcons} className="settings-icons"><Text style={styles.settingsText}>Website</Text><Image source={require("../assets/settings_page/Blue_Arrow_Button.png")} /></View></TouchableHighlight>
+          <TouchableHighlight onPress={() => this.show_main_menu()}><View style={styles.settingsIcons} className="settings-icons"><Text style={styles.settingsText}>Menu Screen</Text><Image source={require("../assets/settings_page/Blue_Arrow_Button.png")} /></View></TouchableHighlight>
         </ScrollView>
       </ImageBackground>
     )
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   settingsContainer: {
     height: screenHeight,
     width: screenWidth / 3,
-    zIndex: 11,
+    zIndex: 10,
     position: 'absolute',
     top: 0,
     right: 100

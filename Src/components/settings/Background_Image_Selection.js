@@ -20,7 +20,6 @@ class Background_Image_Selection extends Component {
   }
 
   updateBackgroundImage(backgroundImage) {
-    console.log('in update', backgroundImage)
     store.dispatch(types.updateBackgroundImage(backgroundImage))
   }
 

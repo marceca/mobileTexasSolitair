@@ -11,7 +11,7 @@ import Tutorial from './settings/Tutorial';
 import Main_Menu from './Main_Menu';
 import Settings from './Settings';
 import Stick_Switch_Hands from'./Stick_Switch_Hands';
-import backgroundPossibilities from './Constants';
+import constants from '../assets/Constants';
 
 const screenWidth = Dimensions.get('window').width;
 const screenHeight = Dimensions.get('window').height;
@@ -25,26 +25,20 @@ const mapStateToProps = (state) => {
 class Game extends Component {
 
   deal(el, props) {
-    let button = document.getElementById('game-button').innerHTML;
-    if(props.game.dealt === false) {
+    if(props.game.play === 1) {
       store.dispatch(types.deal())
-      document.getElementById('game-button').innerHTML = 'Flop';
     }
-    if(button === 'Flop' && props.game.chosenHand != false) {
+    if(props.game.play === 2 && props.game.chosenHand != false) {
       store.dispatch(types.flop());
-      document.getElementById('game-button').innerHTML = 'Turn';
     }
-    if(button === 'Turn') {
+    if(props.game.play === 3) {
       store.dispatch(types.turn());
-      document.getElementById('game-button').innerHTML = 'River';
     }
-    if(button === 'River') {
+    if(props.game.play === 4) {
       store.dispatch(types.river());
-      document.getElementById('game-button').innerHTML = 'Results';
     }
-    if(button === 'Results') {
+    if(props.game.play === 5) {
       store.dispatch(types.results());
-      document.getElementById('game-button').innerHTML = 'Reset';
     }
   }
 
@@ -52,7 +46,7 @@ class Game extends Component {
     store.dispatch(types.allowSwitch())
   }
 
-  openSettings() {
+  openCloseSettings() {
     store.dispatch(types.settings())
   }
   
@@ -69,14 +63,15 @@ class Game extends Component {
   }
 
   render() {
-    const bg = backgroundPossibilities[this.props.settings.main_background_image]
+    const bg = constants.backgroundPossibilities[this.props.settings.main_background_image]
     return (
       console.log('props ', this.props),
       <ImageBackground style={styles.mainBackgroundImage} source={bg}>
         <View style={styles.container} className="background-image-container">
-          {this.props.settings.mainMenu ? <Main_Menu /> : null}
-            <View style={styles.imageContainer} className="settings-icon" >
-              <TouchableHighlight onPress={() => this.openSettings()}>
+          <ImageBackground style={styles.tableBackgroundImage} source={require('../assets/tables/Poker_Table.png')}>
+            {this.props.settings.mainMenu ? <Main_Menu /> : null}
+            <View style={styles.imageContainer} className="settings-icon">
+              <TouchableHighlight onPress={() => this.openCloseSettings()}>
                 <Image style={styles.settingsIcon} source={require('../assets/icons/settings.png')} />
               </TouchableHighlight>
             </View>
@@ -87,29 +82,26 @@ class Game extends Component {
             {this.props.settings.total_hands ? <Total_Number_Of_Hands /> : null}
             {this.props.settings.change_card_back ? <Change_Card_Back /> : null}
             { this.props.settings.settings ? <Settings /> : null}
-            <View className="cards-container">
-              <View className="player-hands-container">
+            <View style={styles.cardsContainer} className="cards-container">
+              <View style={styles.playerHandsContainer} className="player-hands-container">
                 <Stick_Switch_Hands />
               </View>
-              <View className="community-card-container">
-                <View>
-                  <View className="community-cards">
-                    {this.props.game.communityCards}
-                  </View>
-                </View>
+              <View style={styles.communityCardsContainer} className="community-cards">
+                {this.props.game.communityCards}
               </View>
             </View>
-            <View className="buttons-container">
-              <View className="user-cards">
-                <View className="possible-hand">
+            <View style={styles.buttonsContainer} className="buttons-container">
+              <View Style={styles.userCards}className="user-cards">
+                <View style={styles.playeHand} className="possible-hand">
                   {this.props.game.handsDisplay[this.props.game.handsDisplay.length - 1]}
                 </View>
               </View>
-              <View className="stick-switch-buttons">
-                <TouchableHighlight className="button stick" id="game-button" onClick={(e) => this.deal(e,this.props)} ><Text>Play</Text></TouchableHighlight>
-                <TouchableHighlight className="button switch" onClick={(e) => this.switch(e,this.props)}><Text>Switch</Text></TouchableHighlight>
+              <View style={styles.stickSwitchButtonsContainer} className="stick-switch-buttons">
+                <TouchableHighlight className="button stick" id="game-button" onPress={(e) => this.deal(e,this.props)} ><Image style={styles.stickSwitchButtons} source={require('../assets/buttons/Stick_Button_White_2.png')} /></TouchableHighlight>
+                <TouchableHighlight className="button switch" onPress={(e) => this.switch(e,this.props)}><Image style={styles.stickSwitchButtons} source={require('../assets/buttons/Switch_Button_White_2.png')} /></TouchableHighlight>
               </View>
             </View>
+          </ImageBackground>
         </View>
       </ImageBackground>
     );
@@ -125,17 +117,59 @@ const styles = StyleSheet.create({
     width: screenWidth,
     height: screenHeight
   },
+  tableBackgroundImage: {
+    width: screenWidth,
+    height: screenHeight,
+    resizeMode: 'center',
+    justifyContent: 'space-between'
+  },
   imageContainer: {
-    width: 20,
+    width: screenWidth,
     height: 20,
-    position: 'absolute',
-    top: 30,
-    right: 30
+    alignItems: 'flex-end'
   },
   settingsIcon: {
     width: 30,
     height: 30,
-    zIndex: 10
+  },
+  cardsContainer: {
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    width: screenWidth,
+    height: screenHeight / 2
+  },
+  playerHandsContainer: {
+    flexDirection: 'column',
+    width: screenWidth / 2,
+  },
+  communityCardsContainer: {
+    flexDirection: 'row',
+    width: screenWidth / 2,
+  },
+  buttonsContainer: {
+    width: screenWidth,
+    height: screenHeight / 4,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row'
+  },
+  userCards: {
+    justifyContent: 'flex-end',
+    width: screenWidth / 2
+  },
+  playeHand: {
+    width: 120,
+    height: 90,
+    padding: 10,
+    flexDirection: 'row'
+  },
+  stickSwitchButtonsContainer: {
+    justifyContent: 'space-around',
+    flexDirection: 'row'
+  },
+  stickSwitchButtons: {
+    height: 75,
+    width: 150
   }
 })
 

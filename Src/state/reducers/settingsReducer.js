@@ -31,13 +31,27 @@ const settingsReducer = (state = initState, action)=> {
     // SHOW MAIN MENU
     case types.SHOWMAINMENU:
       const showMainMenuState = Object.assign({}, state);
+      showMainMenuState.settings = false;
+      showMainMenuState.background_image = false;
+      showMainMenuState.change_card_back = false;
+      showMainMenuState.total_hands = false;
+      showMainMenuState.hand_ranks = false;
       showMainMenuState.mainMenu = true;
     return showMainMenuState;
 
     //SETTINGS CONTROLS
     case types.SETTINGS:
       const settingsState = Object.assign({}, state);
-      settingsState.settings = true;
+      if(settingsState.settings === true) {
+        settingsState.settings = false;
+        settingsState.background_image = false;
+        settingsState.change_card_back = false;
+        settingsState.total_hands = false;
+        settingsState.hand_ranks = false;
+        settingsState.tutorial = false;
+      } else {
+        settingsState.settings = true
+      }
     return settingsState;
 
     case types.CLOSESETTINGS:
@@ -145,7 +159,6 @@ const settingsReducer = (state = initState, action)=> {
       return tutorialPageState;
 
   default:
-  console.log('default')
     return state;
   }
 }
